@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="te" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suryapet CarePlus | ప్రొఫెషనల్ హోమ్ నర్సింగ్ నెట్‌వర్క్</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        premiumDark: '#0b132b',
+                        premiumTeal: '#4cc9f0',
+                        premiumPurple: '#7209b7',
+                        premiumGlass: 'rgba(255, 255, 255, 0.03)'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-card {
+            background: rgba(11, 19, 43, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #4cc9f0 0%, #f72585 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-[#060b19] text-slate-200 font-sans antialiased">
+
+    <!-- Top Neon Info Bar -->
+    <div class="bg-premiumDark/80 backdrop-blur-md text-center py-2.5 px-4 text-xs md:text-sm font-bold tracking-wider text-premiumTeal border-b border-premiumTeal/10">
+        <i class="fas fa-map-marker-alt animate-pulse mr-1.5 text-pink-500"></i>  ప్రత్యేకంగా మన <span class="text-white underline decoration-pink-500 font-black">సూర్యాపేట (Suryapet)</span> ఏరియా కొరకు హోమ్ నర్సింగ్ సేవలు
+    </div>
+
+    <!-- Luxury Navigation - (ఇక్కడి నుండి sticky top-0 తీసేసాను, కాబట్టి ఇది కూడా పైకి స్క్రోల్ అవుతుంది) -->
+    <nav class="glass-card border-b border-white/5 py-4 px-4 md:px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-gradient-to-tr from-premiumPurple to-premiumTeal text-white p-3 rounded-2xl shadow-lg shadow-premiumTeal/20">
+                    <i class="fas fa-star-of-life text-xl animate-spin [animation-duration:10s]"></i>
+                </div>
+                <div>
+                    <span class="text-2xl font-black tracking-tighter text-white">SURYAPET<span class="text-premiumTeal"> CARE+</span></span>
+                    <p class="text-[9px] text-pink-500 uppercase tracking-widest font-black -mt-1">Professional Nursing Network</p>
+                </div>
+            </div>
+            
+            <!-- రైట్ సైడ్ లోగో మరియు బుకింగ్ బటన్ సెక్షన్ -->
+            <div class="flex items-center gap-4">
+                <!-- నువ్వు అడిగిన రైట్ సైడ్ లోగో బాక్స్ -->
+                <div class="w-12 h-12 rounded-xl overflow-hidden border border-white/20 shadow-md bg-premiumDark flex items-center justify-center">
+                    <img src="https://i.ibb.co/xKjv4tt7/1783911183971.jpg" alt="Suryapet CarePlus Logo" class="w-full h-full object-cover">
+                </div>
+                
+                <button onclick="openBookingModal()" class="bg-gradient-to-r from-premiumTeal to-blue-600 hover:from-blue-600 hover:to-premiumTeal text-premiumDark font-black text-xs md:text-sm py-3 px-6 rounded-xl transition-all duration-500 transform hover:scale-105 shadow-lg shadow-premiumTeal/20">
+                    <i class="fas fa-bolt mr-1"></i> బుక్ నౌ (Book Now)
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden py-20 lg:py-32 bg-premiumDark/40">
+        <div class="absolute inset-0 z-0 flex opacity-20 pointer-events-none blur-xl scale-105">
+            <div class="w-1/2 h-full bg-cover bg-center" style="background-image: url('https://i.ibb.co/xKjv4tt7/1783911183971.jpg');"></div>
+            <div class="w-1/2 h-full bg-cover bg-center" style="background-image: url('https://i.ibb.co/FqhPW7nD/1783911147734.jpg');"></div>
+        </div>
+        <div class="absolute inset-0 z-0 bg-gradient-to-b from-[#060b19]/10 via-[#060b19]/80 to-[#060b19]"></div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-8">
+            <span class="inline-flex items-center gap-2 bg-white/5 text-white text-xs font-black px-4 py-2 rounded-full border border-white/10">
+                <i class="fas fa-file-medical text-premiumTeal"></i> డాక్టర్ ప్రిస్క్రిప్షన్ ఆధారిత హోమ్ కేర్ సేవలు
+            </span>
+            <h1 class="text-4xl md:text-6xl font-black tracking-tight text-white leading-tight">
+                హాస్పిటల్‌కి వెళ్లలేని స్థితిలో ఉన్నారా? <br>
+                <span class="text-gradient">నర్సింగ్ సేవలు మీ ఇంట్లోనే!</span>
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+                సూర్యాపేట పట్టణంలో హాస్పిటల్స్ చుట్టూ తిరగడం ఇబ్బందిగా మారిన రోగుల కొరకు... మీ డాక్టర్ రాసిచ్చిన ప్రిస్క్రిప్షన్ ప్రకారం ఇంజెక్షన్స్, సెలైన్ మరియు డ్రెస్సింగ్ సేవలు అందించడానికి మా క్వాలిఫైడ్ హోమ్ నర్సింగ్ టీమ్ అందుబాటులో ఉంటుంది.
+            </p>
+            
+            <div class="flex flex-col items-center justify-center pt-6 space-y-4">
+                <button onclick="openBookingModal()" class="w-full max-w-md bg-gradient-to-r from-premiumTeal via-cyan-400 to-blue-600 hover:from-blue-600 hover:to-premiumTeal text-premiumDark font-black text-xl py-5 px-10 rounded-2xl transition-all duration-500 transform hover:scale-105 shadow-2xl shadow-premiumTeal/40 border border-white/20 uppercase tracking-wider animate-bounce [animation-duration:3s]">
+                    <i class="fas fa-shopping-cart mr-2"></i> బుక్ నౌ (Book Now)
+                </button>
+                <p class="text-xs text-slate-400">ఒక్క క్లిక్‌తో మీ వివరాలు సబ్మిట్ చేయండి</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimers -->
+    <section class="max-w-4xl mx-auto px-4 mb-8">
+        <div class="bg-amber-500/10 border border-amber-500/30 rounded-2xl p-4 flex gap-3 items-start">
+            <i class="fas fa-exclamation-triangle text-amber-500 text-lg mt-0.5 animate-pulse"></i>
+            <div class="text-xs text-amber-200/80 leading-relaxed">
+                <strong class="text-amber-400 block mb-1">ముఖ్య గమనిక (Mandatory Notice):</strong>
+                మేము సొంతంగా ఎలాంటి వైద్య పరీక్షలు లేదా కొత్త మందులు సిఫార్సు చేయము. కేవలం మీ అర్హత కలిగిన డాక్టర్ రాసిచ్చిన అధికారిక ప్రిస్క్రిప్షన్ పత్రాన్ని చూసిన తర్వాతే సపోర్టింగ్ సేవలు అందిస్తాము.
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 mb-12">
+        <div class="bg-red-500/10 border border-red-500/30 rounded-2xl p-4 flex gap-3 items-start">
+            <i class="fas fa-shield-halved text-red-400 text-lg mt-0.5"></i>
+            <div class="text-xs text-red-200/80 leading-relaxed">
+                <strong class="text-red-400 block mb-1">నెట్‌వర్క్ క్వాలిటీ అస్యూరెన్స్ పాలసీ:</strong>
+                రోగుల పట్ల నిర్లక్ష్యం వహించినా, నెట్‌వర్క్ మేనేజ్‌మెంట్‌కు సరైన రిపోర్టింగ్ ఇవ్వకపోయినా... సదరు అసిస్టెంట్ ప్రొఫైల్‌ను వెబ్‌సైట్ నుండి శాశ్వతంగా తొలగించడం (Permanent Deletion) జరుగుతుంది.
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="max-w-7xl mx-auto px-4 py-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-premiumTeal/30 transition-all duration-500 group">
+                <div class="text-premiumTeal text-4xl mb-6"><i class="fas fa-syringe"></i></div>
+                <h3 class="text-xl font-black text-white mb-3">ఐవి సెలైన్ & ఇంజెక్షన్స్</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">మీ డాక్టర్ ప్రిస్క్రిప్షన్ ఆధారంగా ఇంట్లోనే సురక్షితమైన పద్ధతిలో ఐవీ ఫ్లూయిడ్స్ (సెలైన్) మరియు ఇంజెక్షన్స్ వేయబడును.</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-pink-500/30 transition-all duration-500 group">
+                <div class="text-pink-500 text-4xl mb-6"><i class="fas fa-band-aid"></i></div>
+                <h3 class="text-xl font-black text-white mb-3">గాయాలు & సర్జరీ డ్రెస్సింగ్</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">దెబ్బలు తగిలినా లేదా ఆపరేషన్ల తర్వాత గాయాలు ఉన్నా, ప్రొఫెషనల్ మెడికల్ కిట్ ద్వారా కట్టు (Wound Dressing) కట్టబడును.</p>
+            </div>
+            <div class="glass-card p-8 rounded-3xl border border-white/5 hover:border-premiumPurple/30 transition-all duration-500 group">
+                <div class="text-premiumPurple text-4xl mb-6"><i class="fas fa-user-nurse"></i></div>
+                <h3 class="text-xl font-black text-white mb-3">వృద్ధుల సంరక్షణ</h3>
+                <p class="text-slate-400 text-sm leading-relaxed">లేవలేని స్థితిలో ఉన్న వృద్ధులకు కాతేటర్(మూత్రం పైప్) మార్చడం వైటల్స్ (BP/Pulse) చెకింగ్ సేవలు.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Staff Team Section -->
+    <section id="team" class="max-w-5xl mx-auto px-4 py-16">
+        <div class="glass-card p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl">
+            <div class="text-center max-w-2xl mx-auto mb-10">
+                <h2 class="text-2xl md:text-3xl font-black text-white">మా సూర్యాపేట హోమ్ కేర్ అసిస్టెంట్స్</h2>
+                <p class="text-sm text-slate-400 mt-2">ప్రస్తుతుం డ్యూటీలో అందుబాటులో ఉన్నవారిని ఇక్కడ చూసి నేరుగా సంప్రదించవచ్చు.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Expert 1 -->
+                <div id="expert1-card" class="bg-white/5 p-5 rounded-2xl border border-premiumTeal/30 text-center space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="text-[10px] bg-premiumTeal/10 text-premiumTeal font-bold px-2 py-0.5 rounded">Leader & Admin</span>
+                        <span id="expert1-dot" class="w-2.5 h-2.5 bg-green-500 rounded-full animate-ping"></span>
+                    </div>
+                    <h4 class="font-black text-white text-lg">T.Ramesh</h4>
+                    <p class="text-xs text-slate-400">6 years medical experiance</p>
+                    <span id="expert1-badge" class="inline-block text-[11px] font-black bg-green-500/20 text-green-400 px-3 py-1 rounded-full">AVAILABLE</span>
+                    <a id="expert1-call" href="tel:9999999999" class="block w-full bg-premiumTeal text-premiumDark font-black text-sm py-2.5 rounded-xl transition hover:opacity-90">
+                        <i class="fas fa-phone-alt mr-1"></i> కాల్ చేయండి
+                    </a>
+                </div>
+
+                <!-- Expert 2 -->
+                <div id="expert2-card" class="bg-white/5 p-5 rounded-2xl border border-white/5 text-center space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="text-[10px] bg-emerald-500/10 text-emerald-400 font-bold px-2 py-0.5 rounded"><i class="fas fa-check-circle"></i> Verified Staff</span>
+                        <span id="expert2-dot" class="w-2.5 h-2.5 bg-green-500 rounded-full animate-ping"></span>
+                    </div>
+                    <h4 class="font-black text-white text-lg">సపోర్ట్ అసిస్టెంట్ 1</h4>
+                    <p class="text-xs text-slate-400">సూర్యాపేట లోకల్ టీమ్</p>
+                    <span id="expert2-badge" class="inline-block text-[11px] font-black bg-green-500/20 text-green-400 px-3 py-1 rounded-full">AVAILABLE</span>
+                    <a id="expert2-call" href="tel:8888888888" class="block w-full bg-white/10 text-white font-black text-sm py-2.5 rounded-xl border border-white/10 transition">
+                        <i class="fas fa-phone-alt mr-1"></i> కాల్ చేయండి
+                    </a>
+                </div>
+
+                <!-- Expert 3 -->
+                <div id="expert3-card" class="bg-white/5 p-5 rounded-2xl border border-white/5 text-center space-y-3">
+                    <div class="flex justify-between items-center">
+                        <span class="text-[10px] bg-emerald-500/10 text-emerald-400 font-bold px-2 py-0.5 rounded"><i class="fas fa-check-circle"></i> Verified Staff</span>
+                        <span id="expert3-dot" class="w-2.5 h-2.5 bg-green-500 rounded-full animate-ping"></span>
+                    </div>
+                    <h4 class="font-black text-white text-lg">సపోర్ట్ అసిస్టెంట్ 2</h4>
+                    <p class="text-xs text-slate-400">సూర్యాపేట లోకల్ టీమ్</p>
+                    <span id="expert3-badge" class="inline-block text-[11px] font-black bg-green-500/20 text-green-400 px-3 py-1 rounded-full">AVAILABLE</span>
+                    <a id="expert3-call" href="tel:7777777777" class="block w-full bg-white/10 text-white font-black text-sm py-2.5 rounded-xl border border-white/10 transition">
+                        <i class="fas fa-phone-alt mr-1"></i> కాల్ చేయండి
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECURE ADMIN PANEL -->
+    <section class="max-w-md mx-auto px-4 py-6 text-center bg-slate-900/80 rounded-2xl border border-dashed border-white/10 my-6">
+        <p class="text-xs text-amber-400 font-bold mb-3"><i class="fas fa-lock"></i> సెక్యూర్ అడ్మిన్ కంట్రోల్ ప్యానెల్</p>
+        
+        <!-- Login Button initially visible -->
+        <button id="adminLoginBtn" onclick="unlockAdminPanel()" class="bg-amber-500 text-slate-950 font-bold text-xs py-2 px-5 rounded-xl hover:bg-amber-400 transition">
+            <i class="fas fa-key mr-1"></i> అడ్మిన్ లాగిన్ అవ్వండి (Enter PIN)
+        </button>
+
+        <!-- Hidden Control Area - Visible only after correct PIN -->
+        <div id="adminControls" class="hidden space-y-4 text-left pt-2">
+            <div class="border-t border-white/10 pt-3">
+                <p class="text-[11px] text-emerald-400 font-bold mb-2"><i class="fas fa-toggle-on"></i> స్టాఫ్ డ్యూటీ ఆన్/ఆఫ్ చేయండి:</p>
+                <div class="flex flex-wrap gap-2 justify-center">
+                    <button onclick="toggleExpert(1)" class="bg-slate-800 text-white text-xs py-1.5 px-3 rounded-lg border border-white/10 hover:bg-slate-700">నీ ప్రొఫైల్</button>
+                    <button onclick="toggleExpert(2)" class="bg-slate-800 text-white text-xs py-1.5 px-3 rounded-lg border border-white/10 hover:bg-slate-700">అసిస్టెంట్ 1</button>
+                    <button onclick="toggleExpert(3)" class="bg-slate-800 text-white text-xs py-1.5 px-3 rounded-lg border border-white/10 hover:bg-slate-700">అసిస్టెంట్ 2</button>
+                </div>
+            </div>
+
+            <div class="border-t border-white/10 pt-3 space-y-2">
+                <p class="text-[11px] text-emerald-400 font-bold"><i class="fas fa-phone"></i> ఫోన్ నెంబర్లు అప్‌డేట్ చేయండి:</p>
+                <div>
+                    <label class="text-[10px] text-slate-400">నీ నెంబర్:</label>
+                    <input type="tel" id="inputNum1" onchange="updatePhoneNumber(1)" class="w-full text-xs p-2 bg-black/40 border border-white/10 rounded-lg text-white">
+                </div>
+                <div>
+                    <label class="text-[10px] text-slate-400">అసిస్టెంట్ 1 నెంబర్:</label>
+                    <input type="tel" id="inputNum2" onchange="updatePhoneNumber(2)" class="w-full text-xs p-2 bg-black/40 border border-white/10 rounded-lg text-white">
+                </div>
+                <div>
+                    <label class="text-[10px] text-slate-400">అసిస్టెంట్ 2 నెంబర్:</label>
+                    <input type="tel" id="inputNum3" onchange="updatePhoneNumber(3)" class="w-full text-xs p-2 bg-black/40 border border-white/10 rounded-lg text-white">
+                </div>
+            </div>
+            <p class="text-[9px] text-slate-500 text-center mt-2">నెంబర్ టైప్ చేసి పక్కన క్లిక్ చేస్తే ఆటోమేటిక్‌గా సేవ్ అవుతుంది.</p>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4 overflow-y-auto">
+        <div class="glass-card relative rounded-3xl border border-white/10 shadow-2xl w-full max-w-lg overflow-hidden my-8">
+            <div class="absolute inset-0 z-0 bg-cover bg-center opacity-10 blur-sm pointer-events-none" style="background-image: url('https://i.ibb.co/mVkp7BCZ/file-000000006f047208ad14b790abb58ef9.png');"></div>
+            
+            <div class="relative z-10 p-6 md:p-8">
+                <button onclick="closeBookingModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+                
+                <h3 class="text-2xl font-black text-center text-white mb-2">ఆన్‌లైన్ ఫాస్ట్ బుకింగ్</h3>
+                
+                <div class="bg-gradient-to-r from-amber-500/20 to-red-500/10 border border-amber-500/30 text-amber-200 p-3 rounded-xl text-xs font-bold mb-4">
+                    <p class="text-amber-400"><i class="fas fa-calculator mr-1"></i> ధరల మార్పు గమనిక:</p>
+                    <p>లొకేషన్ దూరం, మరియు కేస్ తీవ్రత బట్టి ఫైనల్ ఛార్జీలు మారవచ్చు.</p>
+                </div>
+                
+                <form id="suryapetForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">పేరు:</label>
+                        <input type="text" id="custName" required class="w-full p-3 bg-white/5 border border-white/10 rounded-xl text-white">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">మొబైల్ నెంబర్:</label>
+                        <input type="tel" id="custPhone" required class="w-full p-3 bg-white/5 border border-white/10 rounded-xl text-white">
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">కావలసిన సేవ:</label>
+                        <select id="custService" class="w-full p-3 bg-premiumDark border border-white/10 rounded-xl text-white">
+                            <option value="సెలైన్ / ఇంజెక్షన్ [₹50 - ₹150]">సెలైన్ / ఇంజెక్షన్ (ధర: ₹50 - ₹150)</option>
+                            <option value="గాయానికి కట్టు [₹200 - ₹350]">గాయానికి కట్టు (ధర: ₹200 - ₹350)</option>
+                            <option value="వృద్ధుల కేతటర్ చేంజ్ [₹400 - ₹600]">వృద్ధుల సంరక్షణ (ధర: ₹400 - ₹600)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-slate-400 text-xs font-bold uppercase tracking-wider mb-1">సూర్యాపేట లోని మీ అడ్రస్:</label>
+                        <textarea id="custAddress" rows="3" required class="w-full p-3 bg-white/5 border border-white/10 rounded-xl text-white"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-gradient-to-r from-premiumTeal to-blue-600 font-black text-premiumDark py-3.5 rounded-xl shadow-lg hover:opacity-90 transition uppercase tracking-wide">
+                         బుకింగ్ సబ్మిట్ చేయండి <i class="fab fa-whatsapp ml-1"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 text-xs text-slate-600 border-t border-white/5 mt-12">
+        <p class="font-bold text-slate-400">© 2026 SURYAPET CAREPLUS NETWORK.</p>
+    </footer>
+
+    <script>
+        // 🔒 SECRET PIN SETTING (దీన్ని మార్చుకోవచ్చు)
+        const ADMIN_PIN = "1234";
+
+        function openBookingModal() { document.getElementById('bookingModal').classList.remove('hidden'); }
+        function closeBookingModal() { document.getElementById('bookingModal').classList.add('hidden'); }
+
+        // డిఫాల్ట్ ఫోన్ నెంబర్లు (లోకల్ స్టోరేజ్ నుండి లోడ్ అవుతాయి)
+        let staffPhoneNumbers = JSON.parse(localStorage.getItem('staffPhones')) || {
+            1: "9999999999",
+            2: "8888888888",
+            3: "7777777777"
+        };
+
+        let statuses = JSON.parse(localStorage.getItem('staffStatuses')) || { 1: true, 2: true, 3: true };
+
+        // వెబ్‌సైట్ ఓపెన్ అవ్వగానే డేటా లోడ్ చేయడానికి
+        window.onload = function() {
+            for(let i=1; i<=3; i++) {
+                document.getElementById(`inputNum${i}`).value = staffPhoneNumbers[i];
+                applyStaffUI(i);
+            }
+        };
+
+        // అడ్మిన్ లాక్ అన్‌లాక్ ఫంక్షన్
+        function unlockAdminPanel() {
+            const userPin = prompt("దయచేసి అడ్మిన్ సీక్రెట్ PIN ఎంటర్ చేయండి:");
+            if (userPin === ADMIN_PIN) {
+                document.getElementById('adminLoginBtn').classList.add('hidden');
+                document.getElementById('adminControls').classList.remove('hidden');
+                alert("🔓 అడ్మిన్ ప్యానెల్ సక్సెస్‌ఫుల్‌గా అన్‌లాక్ అయింది!");
+            } else {
+                alert("❌ తప్పుడు PIN! మళ్ళీ ప్రయత్నించండి.");
+            }
+        }
+
+        // నెంబర్ అప్‌డేట్ చేసి సేవ్ చేసే ఫంక్షన్
+        function updatePhoneNumber(id) {
+            const newNum = document.getElementById(`inputNum${id}`).value;
+            if(newNum.trim() !== "") {
+                staffPhoneNumbers[id] = newNum;
+                localStorage.setItem('staffPhones', JSON.stringify(staffPhoneNumbers));
+                applyStaffUI(id);
+            }
+        }
+
+        // ఆన్/ఆఫ్ టోగుల్ ఫంక్షన్
+        function toggleExpert(id) {
+            statuses[id] = !statuses[id];
+            localStorage.setItem('staffStatuses', JSON.stringify(statuses));
+            applyStaffUI(id);
+        }
+
+        // UI అప్‌డేట్ చేసే ఫంక్షన్
+        function applyStaffUI(id) {
+            const card = document.getElementById(`expert${id}-card`);
+            const badge = document.getElementById(`expert${id}-badge`);
+            const dot = document.getElementById(`expert${id}-dot`);
+            const callBtn = document.getElementById(`expert${id}-call`);
+
+            if (!statuses[id]) {
+                card.classList.add('opacity-40', 'grayscale');
+                badge.innerText = "UNAVAILABLE";
+                badge.classList.remove('bg-green-500/20', 'text-green-400');
+                badge.classList.add('bg-red-500/20', 'text-red-400');
+                dot.classList.remove('bg-green-500', 'animate-ping');
+                dot.classList.add('bg-red-500');
+                callBtn.removeAttribute('href');
+                callBtn.innerText = "అందుబాటులో లేరు";
+                callBtn.className = "block w-full bg-slate-800 text-slate-500 font-black text-sm py-2.5 rounded-xl cursor-not-allowed text-center";
+            } else {
+                card.classList.remove('opacity-40', 'grayscale');
+                badge.innerText = "AVAILABLE";
+                badge.classList.remove('bg-red-500/20', 'text-red-400');
+                badge.classList.add('bg-green-500/20', 'text-green-400');
+                dot.classList.remove('bg-red-500');
+                dot.classList.add('bg-green-500', 'animate-ping');
+                
+                callBtn.setAttribute('href', `tel:${staffPhoneNumbers[id]}`);
+                callBtn.innerText = "కాల్ చేయండి";
+                if(id === 1) {
+                    callBtn.className = "block w-full bg-premiumTeal text-premiumDark font-black text-sm py-2.5 rounded-xl transition hover:opacity-90 text-center";
+                } else {
+                    callBtn.className = "block w-full bg-white/10 text-white font-black text-sm py-2.5 rounded-xl border border-white/10 transition text-center";
+                }
+            }
+        }
+
+        // WhatsApp బుకింగ్ ఫంక్షన్
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const service = document.getElementById('custService').value;
+            const address = document.getElementById('custAddress').value;
+
+            // ప్రధాన అడ్మిన్ వాట్సాప్ నెంబర్ ఇక్కడ ఇవ్వు బాయ్
+            const targetWhatsAppAdmin = "919110387874"; 
+
+            let message = `*కొత్త హోమ్ కేర్ బుకింగ్ రిక్వెస్ట్*\n`;
+            message += `-----------------------------------\n`;
+            message += `👤 *కస్టమర్ పేరు:* ${name}\n`;
+            message += `📞 *మొబైల్ నెంబర్:* ${phone}\n`;
+            message += `🩺 *ఎంచుకున్న సేవ:* ${service}\n`;
+            message += `📍 *అడ్రస్:* ${address}\n`;
+            message += `-----------------------------------\n`;
+            
+            const whatsappUrl = `https://api.whatsapp.com/send?phone=${targetWhatsAppAdmin}&text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
